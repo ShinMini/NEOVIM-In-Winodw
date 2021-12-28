@@ -10,6 +10,11 @@ let g:Tlist_Ctags_Cmd=expand('C:\Users\gusal\AppData\Local\CTags')
 
 call plug#begin('~/AppData/Local/nvim/plugged')
 
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
 Plug 'tpope/vim-sensible'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -25,7 +30,6 @@ Plug 'Townk/vim-autoclose'
 Plug 'neomake/neomake'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
 Plug 'python-mode/python-mode', { 'branch': 'develop' }
 
 Plug 'junegunn/goyo.vim'
