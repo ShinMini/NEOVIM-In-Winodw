@@ -21,11 +21,7 @@
         Set-ExecutionPolicy RemoteSigned -scope CurrentUser
         iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
         ```
-    - Insatll Ctags (install via scoop: `scoop install ctags`)
-    - Insatll Git 
-    ``` PS
-    
-    ```
+    - Insatll Ctags (install via scoop: `scoop install ctags`)  (neo vim libary임 , 없어도지장 x)
     - Insatll Python 2.7, Python 3.6 (with pip, virtualenv)
 
 Optional Dependencies:
@@ -85,6 +81,19 @@ Installation:
 ### Enhanced UI with [NERDTree](https://github.com/scrooloose/nerdtree), [vim-airline](https://github.com/vim-airline/vim-airline)    
 ### Many [awesome colorscheme](https://github.com/rafi/awesome-vim-colorschemes) to choose from, and able to use different colorscheme for GUI and console mode. 
 ### Python auto completion with [Deoplete](https://github.com/Shougo/deoplete.nvim), and [deoplete-jedi](https://github.com/zchee/deoplete-jedi)
+
+## nvim profile은 어디에 있나요?
+
+- nvim init.vim, .vimrc 파일의 경우, 
+- init.vim dir => C:\Users\본인\AppData\Local\nvim 에 위치
+- .vimrc dir => default 생성 X, 본인이 생성해 줘야함. 
+    - 보통 ~/.vimrc 로 생성 혹은, ~/vim/.vimrc 로 위치를 잡아줌. 
+
+## 추천하는 nvim color set
+[oneharlf color](https://github.com/sonph/onehalf/tree/master/vim)
+절반은 검정, 절반은 하양 .. 예쁘다..
+* 물론 필자는 번갈아가며 다양하게 쓰는중 
+![image](https://user-images.githubusercontent.com/77220824/189599838-ad0eb148-8e03-4e75-8124-a2f529d1a5e2.png)
 
 <br>
 <br>
