@@ -1,40 +1,32 @@
-# NEO VIM WINDOW ENV SET UP (네오빔 윈도우 환경 세팅)
-===========================
+# NEO VIM WINDOW POWERSHELL ENV SET UP (네오빔 윈도우 파워쉘 환경 세팅)
 
-## Notable enhancements:
-----------------------
-### Log files viewing:
-    - Highlight lines with previous matched pattern via Highlight.vim: `<C-h><C-j>`
-    
-### Tuned for general writing:
-    - distraction free writing via [Goyo](https://github.com/junegunn/goyo.vim) & [Limelight](https://github.com/junegunn/limelight.vim)
-    - grammar check with [vim-wordy](https://github.com/reedes/vim-wordy)
-    - include [Markdown with Vim](https://github.com/gabrielelana/vim-markdown)
-    - soft line wrap for text file and markdown file
-### Enhanced UI with [NERDTree](https://github.com/scrooloose/nerdtree), [vim-airline](https://github.com/vim-airline/vim-airline)    
-### Many [awesome colorscheme](https://github.com/rafi/awesome-vim-colorschemes) to choose from, and able to use different colorscheme for GUI and console mode. 
-### Python auto completion with [Deoplete](https://github.com/Shougo/deoplete.nvim), and [deoplete-jedi](https://github.com/zchee/deoplete-jedi)
+---
 
-<br>
-<br>
+<br/>
 
-# Tested with:
+# Set in Env :
 ---------------
-- OS: Windows 10
-- Windows Command Prompt, nvim-qt (Not doing well with Cmder yet)
+- OS: Windows 11    
+- Windows Command Prompt, nvim-qt, neovim-nightly(0.8.0-dev), neovim(0.6.0)
+- powershell package manager : scoop
 
 # Pre-requisite:
 -----------------
-- Windows Powershell
-- Scoop(https://scoop.sh/)
-    - Open Windows Powershell:
-        ```console
+- Install Windows Powershell [MS store PS](https://apps.microsoft.com/store/detail/powershell/9MZ1SNWT0N5D?hl=ko-kr&gl=kr) (powershell 다운)
+- Insatll Scoop [Scoop site link](https://scoop.sh/) (스쿱 사이트 링크)
+    - way to install PowerShell command (파워쉘 커멘드로 설치하는 방법)
+        - Run Powershell with administor mode (파워쉘을 관리자 모드로 실행)
+        - Install scoop command (powershell package manager) 
+        ```PowerShell
         Set-ExecutionPolicy RemoteSigned -scope CurrentUser
         iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
         ```
-- Ctags (install via scoop: `scoop install ctags`)
-- Git 
-- Python 2.7, Python 3.6 (with pip, virtualenv)
+    - Insatll Ctags (install via scoop: `scoop install ctags`)
+    - Insatll Git 
+    ``` PS
+    
+    ```
+    - Insatll Python 2.7, Python 3.6 (with pip, virtualenv)
 
 Optional Dependencies:
 -----------------------
@@ -71,3 +63,29 @@ Installation:
     ```
 5. (Optional) Install neovim provider for Node.js: `npm install -g neovim`
 6. Install plugin with command: `nvim +PlugInstall`
+
+
+---
+
+<br>
+
+
+## Frequent errors (자주 발생하는 에러)
+
+----------------------
+
+### Log files viewing:
+    - Highlight lines with previous matched pattern via Highlight.vim: `<C-h><C-j>`
+    
+### Tuned for general writing:
+    - distraction free writing via [Goyo](https://github.com/junegunn/goyo.vim) & [Limelight](https://github.com/junegunn/limelight.vim)
+    - grammar check with [vim-wordy](https://github.com/reedes/vim-wordy)
+    - include [Markdown with Vim](https://github.com/gabrielelana/vim-markdown)
+    - soft line wrap for text file and markdown file
+### Enhanced UI with [NERDTree](https://github.com/scrooloose/nerdtree), [vim-airline](https://github.com/vim-airline/vim-airline)    
+### Many [awesome colorscheme](https://github.com/rafi/awesome-vim-colorschemes) to choose from, and able to use different colorscheme for GUI and console mode. 
+### Python auto completion with [Deoplete](https://github.com/Shougo/deoplete.nvim), and [deoplete-jedi](https://github.com/zchee/deoplete-jedi)
+
+<br>
+<br>
+
