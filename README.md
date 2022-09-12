@@ -1,29 +1,29 @@
-nvim-windows-sample-config
+# NEO VIM WINDOW ENV SET UP (네오빔 윈도우 환경 세팅)
 ===========================
 
-Just a simple Neovim configuration which was used at Windows environment.
-
-Work in progress.
-
-Notable enhancements:
+## Notable enhancements:
 ----------------------
-- Log files viewing:
+### Log files viewing:
     - Highlight lines with previous matched pattern via Highlight.vim: `<C-h><C-j>`
-- Tuned for general writing:
+    
+### Tuned for general writing:
     - distraction free writing via [Goyo](https://github.com/junegunn/goyo.vim) & [Limelight](https://github.com/junegunn/limelight.vim)
     - grammar check with [vim-wordy](https://github.com/reedes/vim-wordy)
     - include [Markdown with Vim](https://github.com/gabrielelana/vim-markdown)
     - soft line wrap for text file and markdown file
-- Enhanced UI with [NERDTree](https://github.com/scrooloose/nerdtree), [vim-airline](https://github.com/vim-airline/vim-airline)    
-- Many [awesome colorscheme](https://github.com/rafi/awesome-vim-colorschemes) to choose from, and able to use different colorscheme for GUI and console mode. 
-- Python auto completion with [Deoplete](https://github.com/Shougo/deoplete.nvim), and [deoplete-jedi](https://github.com/zchee/deoplete-jedi)
+### Enhanced UI with [NERDTree](https://github.com/scrooloose/nerdtree), [vim-airline](https://github.com/vim-airline/vim-airline)    
+### Many [awesome colorscheme](https://github.com/rafi/awesome-vim-colorschemes) to choose from, and able to use different colorscheme for GUI and console mode. 
+### Python auto completion with [Deoplete](https://github.com/Shougo/deoplete.nvim), and [deoplete-jedi](https://github.com/zchee/deoplete-jedi)
 
-Tested with:
+<br>
+<br>
+
+# Tested with:
 ---------------
 - OS: Windows 10
 - Windows Command Prompt, nvim-qt (Not doing well with Cmder yet)
 
-Pre-requisite:
+# Pre-requisite:
 -----------------
 - Windows Powershell
 - Scoop(https://scoop.sh/)
